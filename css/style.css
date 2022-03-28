@@ -24,6 +24,13 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "miratex";
+  src: url("/img/icons/miratex.ttf?eij9b6") format("truetype"), url("/img/icons/miratex.woff?eij9b6") format("woff"), url("/img/icons/miratex.svg?eij9b6#miratex") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
 /*Обнуление*/
 * {
   padding: 0;
@@ -98,8 +105,97 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
-.your-style {
-  font-family: "SF Pro Display";
-  font-weight: normal;
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "miratex" !important;
+  speak: never;
   font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fb .path1:before {
+  content: "";
+  color: #1d1d1d;
+}
+
+.icon-fb .path2:before {
+  content: "";
+  margin-left: -1em;
+  color: white;
+}
+
+.icon-insta:before {
+  content: "";
+}
+
+.icon-link:before {
+  content: "";
+  color: #dadada;
+}
+
+.icon-logout:before {
+  content: "";
+  color: #dadada;
+}
+
+.icon-logo:before {
+  content: "";
+}
+
+.icon-Pint .path1:before {
+  content: "";
+  color: white;
+}
+
+.icon-Pint .path2:before {
+  content: "";
+  margin-left: -1em;
+  color: #1d1d1d;
+}
+
+.icon-YouTube .path1:before {
+  content: "";
+  color: #1d1d1d;
+}
+
+.icon-YouTube .path2:before {
+  content: "";
+  margin-left: -1em;
+  color: #fefefe;
+}
+
+body {
+  font-family: "SF Pro Display";
+  color: #161616;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }

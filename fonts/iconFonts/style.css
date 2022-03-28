@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'miratex';
+  src:
+    url('fonts/miratex.ttf?eij9b6') format('truetype'),
+    url('fonts/miratex.woff?eij9b6') format('woff'),
+    url('fonts/miratex.svg?eij9b6#miratex') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'miratex' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fb .path1:before {
+  content: "\e900";
+  color: rgb(29, 29, 29);
+}
+.icon-fb .path2:before {
+  content: "\e901";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-insta:before {
+  content: "\e902";
+}
+.icon-link:before {
+  content: "\e903";
+  color: #dadada;
+}
+.icon-logout:before {
+  content: "\e904";
+  color: #dadada;
+}
+.icon-logo:before {
+  content: "\e905";
+}
+.icon-Pint .path1:before {
+  content: "\e906";
+  color: rgb(255, 255, 255);
+}
+.icon-Pint .path2:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(29, 29, 29);
+}
+.icon-YouTube .path1:before {
+  content: "\e908";
+  color: rgb(29, 29, 29);
+}
+.icon-YouTube .path2:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(254, 254, 254);
+}
